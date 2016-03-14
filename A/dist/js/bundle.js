@@ -57,20 +57,20 @@ var FormView = Backbone.View.extend({
 
 events:{
   'submit' : 'createPost',
-  'add' : 'reloadPage'
+  'collection .add' : 'reloadPage'
 },
 
 createPost: function(e){
   e.preventDefault();
-
-
-
   var postDetails = this.$el.serializeObject();
-  console.log(this.$el);
   console.log(postDetails);
   this.collection.create(postDetails);
 },
 
+render: function(){
+return this;
+
+}
 
 });
 

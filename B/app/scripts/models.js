@@ -19,4 +19,4 @@ module.exports =
 {
   'FormModel':FormModel,
   'FormData':FormData
-}
+};
